@@ -1,0 +1,219 @@
+\documentclass{article}
+
+\usepackage[margin={0.5in,0.5in}]{geometry}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{ulem}
+
+\setlength\parindent{0pt}
+\setlength{\multicolsep}{0pt}
+
+% parameter 1: heading
+\newcommand{\heading}[1]{\uline{\begin{large}\textbf{#1}\end{large} \hfill} \smallskip}
+
+% parameter 1: Company
+% parameter 2: Job Title
+% parameter 3: Location (City, State)
+% parameter 4: Time Range
+\newcommand{\job}[4]{\textbf{#1} $|$ \textit{#2} \hfill #3 $|$ #4}
+
+% parameter 1: Project Name
+% parameter 2: Languages
+% parameter 3: Time Range
+\newcommand{\project}[3]{\textbf{#1} $|$ \textit{#2} \hfill #3}
+
+% parameter 1: Contents of List
+\newcommand{\makeListInner}[1]{\begin{itemize}[noitemsep,topsep=0pt] #1 \end{itemize}}
+
+% parameter 1: Contents of List
+\newcommand{\makeList}[1]{\makeListInner{#1} \medskip}
+
+% parameter 1: Number of Columns
+% parameter 2: Contents of List
+\newcommand{\columnedList}[2]{ \begin{multicols}{#1} \makeListInner{#2} \end{multicols} \medskip }
+
+\begin{document}
+
+	\begin{center}
+
+		\begin{LARGE}
+			\textbf{Caleb L. Baker}
+		\end{LARGE}
+
+		Springfield, OH $|$ 319-759-3722 $|$ Caleb.Baker@ngc.com
+
+		https://github.com/CalebLBaker
+
+	\end{center}
+
+	\heading{SUMMARY}
+
+	A software engineer with experience in many technologies and specializing in back-end
+	development using C++.
+	\medskip
+
+	Skills: \columnedList{3}{
+		\item Object Oriented Programming
+		\item Distributed / Parallel Computing
+		\item API Design
+		\item Compiler Development
+		\item Network Programming
+		\item Mobile App Development
+		\item Functional Programming
+		\item Procedural Programming
+		\item Interpolation / Regression
+		\item Linear Algebra
+		\item Data Structure Design
+		\item Object - Relational Mapping
+		\item Unit Testing / Test Automation
+		\item Algorithm Analysis
+	}
+
+	Technologies: \columnedList{5}{
+		\item C / C++
+		\item Rust
+		\item C\#
+		\item Go
+		\item Kotlin
+		\item Haskell
+		\item Java
+		\item Python
+		\item x86\_64 Assembly
+		\item Javascript
+		\item PHP
+		\item SQL
+		\item HTML / CSS
+		\item Bash
+		\item RegEx
+		\item Qt / QML
+		\item Git
+		\item Ruby
+		\item ClearCase
+		\item Gradle
+		\item Make
+		\item Android Studio
+		\item Visual Studio
+		\item NetBeans
+		\item Vim
+		\item GDB
+		\item Docker
+		\item VirtualBox
+		\item CMake
+		\item JDBC
+		\item Google Test
+		\item Boost
+		\item Google Protbuf
+		\item HDF5
+		\item Linux
+		\item Windows
+		\item Android
+		\item Powershell
+		\item MIPS Assembly
+		\item LaTex
+	}
+	\smallskip
+
+	\heading{EXPERIENCE}
+
+	\job{Northrop Grumman}{Software Engineer}{Beavercreek, OH}{6/19 - Present}
+
+	\makeList{
+		\item Extract functionality from a legacy software application to be used as microservices
+		in a cloud computing system
+		\item Refactor and extend a large code base to provide additional functionality and improve
+		efficiency and reliability
+		\item Write hundreds of unit tests and automated regression tests to improve
+		maintainability and stability of a large code base
+		\item Design and implement a driver to chain and execute background suppression algorithms
+		on serialized data cubes
+	}
+
+	\job{Northrop Grumman}{College Technical Intern}{Beavercreek, OH}{5/18 - 4/19}
+
+	\makeList{
+		\item Rapidly designed, prototyped, and implemented key application functionality in
+		support of a bid for a \$10,000,000 contract
+		\item Performed trade studies that informed critical design decisions related to the
+		technology stack for a large scale project
+		\item Implemented libraries to provide access to advanced mathematical functions for an
+		application
+		\item Worked with a team of expert software developers
+		\item Created a custom search and replace tool to aid in refactoring legacy code
+	}
+
+	\job{Living Water Orthodox Presbyterian Church}{Pianist}{Springfield, OH}{8/17 - 4/19} \medskip
+
+	\job {Cedarville University}{Junior Lab Technician}{Cedarville, OH}{8/17 - 5/18} \medskip
+
+	\job{Johnson Sod Farms}{Farm Hand}{Biggsville, IL}{5/17 - 8/17} \medskip
+
+	\job {Cedarville University}{Homework Grader}{Cedarville, OH}{1/17 - 5/17} \medskip
+
+	\job
+		{Family Outreach Community Center}
+		{AmeriCorps Summer VISTA Worker}
+		{Stronghurst, IL}
+		{6/16 - 7/16}
+	\medskip
+
+	\job{Pioneer College Caterers}{Student Worker}{Cedarville, OH}{5/15 - 8/15} \medskip
+
+	\job{Johnson Sod Farms}{Sod Hand}{Biggsville, IL}{5/15 - 8/15} \medskip
+
+	\job{Fisher$'$s Foods}{Cashier}{Oquawka, IL}{5/15 - 8/15} \bigskip
+
+	\heading{EDUCATION}
+
+	\textbf{Cedarville University}
+	\hfill
+	Cedarville, OH \\
+	\textit{Bachelor of Science}; Computer Science; GPA 3.9045
+	\hfill
+	May 2019 \\
+	Highest Honors \\
+	Minors in Mathematics and Biblical Studies \\
+	Honors Program
+	\smallskip
+
+	Sample Courses: \columnedList{3}{
+		\item Parallel Computing
+		\item Database Org. and Design
+		\item Linux Systems Programming
+		\item Adv. Computer Architecture
+		\item Computer Security
+		\item Computer Networks
+		\item Compiler Theory and Practice
+		\item Linear Algebra
+		\item Data Structures using Java
+		\item Web Applications
+		\item Algorithms
+		\item Software Engineering II
+	}
+
+	Sample Projects: \medskip
+
+	\project{Relatively Fair Scheduler}{C}{9/18 - 5/19} \makeList{
+		\item Designed a new process scheduling algorithm and analyzed its merits compared to
+		existing scheduling algorithms
+		\item Designed and implemented a process scheduler for the Minix Operating System
+	}
+
+	\project{SHARK Suite}{Kotlin, Java, XML, C\#}{8/18 - 5/19} \makeList{
+		\item Worked with a team of students to create a suite of applications to facilitate
+		remotely monitoring vitals and location
+		\item Created a final product that is currently in use by the United States Air Force and
+		will soon be used by NASA
+		\item Designed and implemented a protocol for synchronizing database state across multiple
+		devices over a limited bandwidth network
+		\item Designed a database schema for storing vitals and controlling distributed database
+		state
+		\item Helped to implement two separate Android applications for sending and monitoring
+		vitals
+	}
+
+	\project{C- Compiler}{Java}{1/18 - 5/18} \makeList{
+		\item Implemented a compiler for a usable subset of the C programming language
+	}
+
+\end{document}
+
