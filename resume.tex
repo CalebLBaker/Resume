@@ -13,9 +13,10 @@
 
 % parameter 1: Company
 % parameter 2: Job Title
-% parameter 3: Location (City, State)
-% parameter 4: Time Range
-\newcommand{\job}[4]{\textbf{#1} $|$ \textit{#2} \hfill #3 $|$ #4}
+% parameter 3: Technologies
+% parameter 4: Location (City, State)
+% parameter 5: Time Range
+\newcommand{\job}[5]{\textbf{#1} $|$ \textit{#2} $|$ \textit{#3} \hfill #4 $|$ #5}
 
 % parameter 1: Project Name
 % parameter 2: Languages
@@ -111,7 +112,7 @@
 
 	\heading{EXPERIENCE}
 
-	\job{Northrop Grumman}{Software Engineer}{Beavercreek, OH}{6/19 - Present}
+    \job{Northrop Grumman}{Software Engineer}{C++, Qt/Qml, JS, GTest, Docker}{Beavercreek, OH}{6/19 - Present}
 
 	\makeList{
 		\item Extract functionality from a legacy software application to be used as microservices
@@ -122,38 +123,18 @@
 		maintainability of a large code base
 		\item Design and implement a driver to chain and execute background suppression algorithms
 		on serialized data cubes
+        \item Design and implement new features for a distributed desktop/cloud application
 	}
 
-	\job{Northrop Grumman}{College Technical Intern}{Beavercreek, OH}{5/18 - 4/19}
+    \job{Northrop Grumman}{College Technical Intern}{C++, Go, JS, Java, Python}{Beavercreek, OH}{5/18 - 4/19}
 
 	\makeList{
-		\item Rapidly designed, prototyped, and implemented key functionality in
-		support of a bid for a \$10,000,000 contract
 		\item Performed trade studies that informed critical design decisions related to the
 		technology stack for a large scale project
 		\item Created a custom search and replace tool to aid in refactoring legacy code
+        \item Rapidly designed, prototyped, and implemented key functionality in support of a proposal for a \$10,000,000 contract
+        \item Implemented libraries to provide access to advanced mathematical functionality
 	}
-
-	\job{Living Water Orthodox Presbyterian Church}{Pianist}{Springfield, OH}{8/17 - 4/19} \medskip
-
-	\job {Cedarville University}{Junior Lab Technician}{Cedarville, OH}{8/17 - 5/18} \medskip
-
-	\job{Johnson Sod Farms}{Farm Hand}{Biggsville, IL}{5/17 - 8/17} \medskip
-
-	\job {Cedarville University}{Homework Grader}{Cedarville, OH}{1/17 - 5/17} \medskip
-
-	\job
-		{Family Outreach Community Center}
-		{AmeriCorps Summer VISTA Worker}
-		{Stronghurst, IL}
-		{6/16 - 7/16}
-	\medskip
-
-	\job{Pioneer College Caterers}{Student Worker}{Cedarville, OH}{5/15 - 8/15} \medskip
-
-	\job{Johnson Sod Farms}{Sod Hand}{Biggsville, IL}{5/15 - 8/15} \medskip
-
-	\job{Fisher$'$s Foods}{Cashier}{Oquawka, IL}{5/15 - 8/15} \bigskip
 
 	\heading{EDUCATION}
 
@@ -168,6 +149,23 @@
 	Honors Program
 	\smallskip
 
+    Sample Courses: \columnedList{3}{
+        \item Parallel Computing
+        \item Adv. Computer Architecture
+        \item Database Org. and Design
+        \item Data Structures using Java
+
+        \item Software Engineering II
+        \item Computer Networks
+        \item Compiler Theory and Practice
+        \item Linear Algebra
+
+        \item Algorithms
+        \item Linux Systems Programming
+        \item Web Applications
+        \item Computer Security
+    }
+
 	Sample Projects: \medskip
 
 	\project{Relatively Fair Scheduler}{C}{9/18 - 5/19} \makeList{
@@ -177,8 +175,6 @@
 	\project{SHARK Suite}{Kotlin, Java, XML, C\#}{8/18 - 5/19} \makeList{
 		\item Worked with a team of students to create a suite of applications to facilitate
 		remotely monitoring vitals and location
-		\item Created a final product that is currently in use by the United States Air Force and
-		will soon be used by NASA
 		\item Designed and implemented a protocol for synchronizing distributed database state
 		across a limited bandwidth network
 		\item Designed a database schema for storing vitals and controlling distributed database
@@ -190,6 +186,50 @@
 	\project{C- Compiler}{Java}{1/18 - 5/18} \makeList{
 		\item Implemented a compiler for a usable subset of the C programming language
 	}
+
+    \pagebreak
+
+    \heading{PROJECTS}
+
+    \medskip
+
+    \project{Untitled Game}{Rust, WebAssembly, JS}{12/20 - Present} \makeList{
+        \item Browser Based 2D video game written in Rust and compiled to web assembly
+        \item Retrieves and renders images by using the wasm-bindgen crate to call javascript API's from Rust
+        \item Actual game logic is still in early stages of development
+    }
+
+    \project{Micros}{Rust, x86\_64 Assembly}{10/20 - Present} \makeList {
+        \item Small Microkernel Operating System Designed to be lightweight and safe
+        \item Multiboot2 compliant boot process
+        \item Sets up call stack
+        \item Boots processor into 64-bit long mode
+        \item Enables memory paging
+        \item Sets up page frame allocator by reading from the multiboot info structure memory map
+        \item Sets up global descriptor table and interrupt descriptor table
+        \item Enables hardware interrupts using local APIC
+        \item Support for user space processes is a work in progress
+    }
+
+    \project{rootedinloveplants.com}{Rust, Docker, Html, CSS, JS}{8/20 - Present} \makeList{
+        \item Simple website for a small business
+        \item Html content generated from JSON by custom html generator
+        \item Server back-end capable of sending emails using a secure gmail account
+        \item Content dynamically adjusts for optimal viewability based on screen dimensions
+        \item Functions correctly in Chrome, Firefox, Edge, and Internet Explorer
+        \item Integration with facebook messenger API to send facebook messages is a work in progress
+    }
+
+
+    \project{Quartz}{C++, LLVM, Go}{7/19 - 7/20} \makeList {
+        \item Hand written compiler for a custom programming language
+        \item Scans and tokenizes input files using a hand-written finite state machine based lexer
+        \item Parses into abstract syntax tree using a recursive descent parser
+        \item Semantic analysis and type checking inspired by functional programming languages
+        \item Leverage LLVM compiler back-end library for code generation, optimization, and linking
+        \item Supports function and variable declaration and initialization
+        \item Support for function calls, operators, and other language features is unfinished
+    }
 
 \end{document}
 
