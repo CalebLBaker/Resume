@@ -136,11 +136,8 @@
     \project{Micros}{Rust, x86\_64 Assembly}{10/20 - Present} \makeList {
         \item Small Microkernel Operating System Designed to be lightweight and safe
         \item Multiboot2 compliant boot process
-        \item Sets up call stack
         \item Boots processor into 64-bit long mode
-        \item Enables memory paging
         \item Sets up page frame allocator by reading from the multiboot info structure memory map
-        \item Sets up global descriptor table and interrupt descriptor table
         \item Enables hardware interrupts using local APIC
         \item Support for user space processes is a work in progress
     }
@@ -158,6 +155,11 @@
         \item Leverage LLVM compiler back-end library for code generation, optimization, and linking
         \item Supports function and variable declaration and initialization
         \item Support for function calls, operators, and other language features is unfinished
+    }
+
+    \project{SHARK Suite}{Kotlin, C\#, Java, SQL}{8/18 - 5/19} \makeList {
+        \item A suite of mobile and web applications for monitoring vitals during wilderness training
+        \item Synchronizes database state across mobile devices over a limited bandwidth network
     }
 
 \end{document}
