@@ -43,7 +43,7 @@
 			\textbf{Caleb L. Baker}
 		\end{LARGE}
 
-		Springfield, OH $|$ 319-759-3722 $|$ calebbaker774@gmail.com
+		Xenia, OH $|$ 319-759-3722 $|$ calebbaker774@gmail.com
 
 		https://github.com/CalebLBaker
 
@@ -51,36 +51,36 @@
 
 	\heading{SUMMARY}
 
-    A software engineer with experience using C++ professionally and Rust for hobby projects
-    looking for a remote work position that will provide an opportunity to start using Rust
-    professionally
+    A software engineer who is passionate about creating high quality software that helps real people.
+
 	\medskip
 
 	Technologies: \columnedList{5}{
 		\item Rust
 		\item Haskell
 		\item SQL
-		\item Git
+		\item RegEx
 
 		\item C / C++
 		\item Java
-		\item PHP
-		\item Google Test
+		\item OpenMP
+		\item Git
 
 		\item Go
-		\item Python
-		\item HTML / CSS
-		\item Docker
-
 		\item C\#
-		\item x86\_64 Assembly
-		\item Bash
-		\item Vim
+		\item HTML / CSS
+		\item Google Test
 
+		\item Python
+		\item x86\_64 Assembly
+        \item WebAssembly
 		\item Kotlin
+
+		\item Docker
 		\item Javascript
-		\item RegEx
-		\item Linux
+		\item Bash
+		\item Google Cloud
+
 	}
 	\smallskip
 
@@ -89,6 +89,7 @@
     \job{Northrop Grumman}{Software Engineer}{C++, Qt/Qml, JS, GTest, Docker}{Beavercreek, OH}{6/19 - Present}
 
 	\makeList{
+        \item Design and implement new features for a distributed desktop/cloud application
 		\item Extract functionality from a legacy software application to be used as microservices
 		in a cloud computing system
 		\item Refactor and extend a large code base to provide additional functionality and improve
@@ -97,7 +98,10 @@
 		maintainability of a large code base
 		\item Design and implement a driver to chain and execute background suppression algorithms
 		on serialized data cubes
-        \item Design and implement new features for a distributed desktop/cloud application
+        \item Profile performance critical code in order to focus optimizations on hot code paths
+        \item Review pull requests to ensure only safe, efficient, and readable code is merged
+        \item Refactor a large code base in order to improve code quality and reduce the number of warning emitted by the
+        compiler from several hundred to zero
 	}
 
     \job{Northrop Grumman}{College Technical Intern}{C++, Go, JS, Java, Python}{Beavercreek, OH}{5/18 - 4/19}
@@ -107,7 +111,7 @@
 		technology stack for a large scale project
 		\item Created a custom search and replace tool to aid in refactoring legacy code
         \item Rapidly designed, prototyped, and implemented key functionality in support of a proposal for a \$10,000,000 contract
-        \item Implemented libraries to provide access to advanced mathematical functionality
+        \item Designed and implemented REST API microservices
 	}
 
 	\heading{EDUCATION}
@@ -123,38 +127,30 @@
 	Honors Program
 	\smallskip
 
-    \heading{PROJECTS}
+    \heading{OTHER PROJECTS}
 
     \medskip
 
-    \project{Alemian Saga}{Rust, WebAssembly, JS}{12/20 - Present} \makeList{
-        \item Browser Based 2D video game written in Rust and compiled to web assembly
+    \project{Alemian Saga (Unfinished)}{Rust, WebAssembly, JS, GCP}{12/20 - Present} \makeList{
+        \item Browser-based 2D video game written in Rust and compiled to web assembly
         \item Retrieves and renders images by using the wasm-bindgen crate to call javascript API's from Rust
-        \item Actual game logic is still in early stages of development
+        \item Handles player input and selectively redraws affected portions of the screen
+        \item Stores user preferences using Google Cloud Firestore
     }
 
-    \project{Micros}{Rust, x86\_64 Assembly}{10/20 - Present} \makeList {
-        \item Small Microkernel Operating System Designed to be lightweight and safe
+    \project{Micros (Unfinished)}{Rust, x86\_64 Assembly}{10/20 - 11/20} \makeList {
+        \item Small microkernel operating system designed to be lightweight and safe
         \item Multiboot2 compliant boot process
-        \item Boots processor into 64-bit long mode
         \item Sets up page frame allocator by reading from the multiboot info structure memory map
         \item Enables hardware interrupts using local APIC
-        \item Support for user space processes is a work in progress
     }
 
-    \project{rootedinloveplants.com}{Rust, Docker, Html, CSS, JS}{8/20 - Present} \makeList{
-        \item Simple website for a small business
-    }
-
-
-    \project{Quartz}{C++, LLVM, Go}{7/19 - 7/20} \makeList {
+    \project{Quartz (Unfinished)}{C++, LLVM, Go}{7/19 - 7/20} \makeList {
         \item Hand written compiler for a custom programming language
         \item Scans and tokenizes input files using a hand-written finite state machine based lexer
         \item Parses into abstract syntax tree using a recursive descent parser
         \item Semantic analysis and type checking inspired by functional programming languages
         \item Leverage LLVM compiler back-end library for code generation, optimization, and linking
-        \item Supports function and variable declaration and initialization
-        \item Support for function calls, operators, and other language features is unfinished
     }
 
     \project{SHARK Suite}{Kotlin, C\#, Java, SQL}{8/18 - 5/19} \makeList {
